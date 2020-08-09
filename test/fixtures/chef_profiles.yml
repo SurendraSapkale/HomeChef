@@ -1,0 +1,31 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  first_name: MyString
+  last_name: MyString
+  email: MyString
+  contact_number: 1
+  street_address: MyString
+  suburb: MyString
+  state: MyString
+  postcode: 1
+  cooking_speciality: MyText
+  cooking_capacity: 1
+  food_pick_up_timings: 2020-08-04 15:29:45
+  picture: MyString
+  user: one
+
+two:
+  first_name: MyString
+  last_name: MyString
+  email: MyString
+  contact_number: 1
+  street_address: MyString
+  suburb: MyString
+  state: MyString
+  postcode: 1
+  cooking_speciality: MyText
+  cooking_capacity: 1
+  food_pick_up_timings: 2020-08-04 15:29:45
+  picture: MyString
+  user: two

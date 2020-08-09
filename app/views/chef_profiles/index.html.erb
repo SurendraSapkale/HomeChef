@@ -1,0 +1,50 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Chef Profiles</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>First name</th>
+      <th>Last name</th>
+      <th>Email</th>
+      <th>Contact number</th>
+      <th>Street address</th>
+      <th>Suburb</th>
+      <th>State</th>
+      <th>Postcode</th>
+      <th>Cooking speciality</th>
+      <th>Cooking capacity</th>
+      <th>Food pick up timings</th>
+      <th>Picture</th>
+      <th>User</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @chef_profiles.each do |chef_profile| %>
+      <tr>
+        <td><%= chef_profile.first_name %></td>
+        <td><%= chef_profile.last_name %></td>
+        <td><%= chef_profile.email %></td>
+        <td><%= chef_profile.contact_number %></td>
+        <td><%= chef_profile.street_address %></td>
+        <td><%= chef_profile.suburb %></td>
+        <td><%= chef_profile.state %></td>
+        <td><%= chef_profile.postcode %></td>
+        <td><%= chef_profile.cooking_speciality %></td>
+        <td><%= chef_profile.cooking_capacity %></td>
+        <td><%= chef_profile.food_pick_up_timings %></td>
+        <td><%= image_tag chef_profile.picture %></td>
+        <td><%= chef_profile.user_id %></td>
+        <td><%= link_to 'Show', chef_profile %></td>
+        
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Chef Profile', new_chef_profile_path %>

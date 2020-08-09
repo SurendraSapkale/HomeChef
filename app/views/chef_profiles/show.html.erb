@@ -1,0 +1,71 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>First name:</strong>
+  <%= @chef_profile.first_name %>
+</p>
+
+<p>
+  <strong>Last name:</strong>
+  <%= @chef_profile.last_name %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @chef_profile.email %>
+</p>
+
+<p>
+  <strong>Contact number:</strong>
+  <%= @chef_profile.contact_number %>
+</p>
+
+<p>
+  <strong>Street address:</strong>
+  <%= @chef_profile.street_address %>
+</p>
+
+<p>
+  <strong>Suburb:</strong>
+  <%= @chef_profile.suburb %>
+</p>
+
+<p>
+  <strong>State:</strong>
+  <%= @chef_profile.state %>
+</p>
+
+<p>
+  <strong>Postcode:</strong>
+  <%= @chef_profile.postcode %>
+</p>
+
+<p>
+  <strong>Cooking speciality:</strong>
+  <%= @chef_profile.cooking_speciality %>
+</p>
+
+<p>
+  <strong>Cooking capacity:</strong>
+  <%= @chef_profile.cooking_capacity %>
+</p>
+
+<p>
+  <strong>Food pick up timings:</strong>
+  <%= @chef_profile.food_pick_up_timings %>
+</p>
+
+<p>
+  <strong>Picture:</strong>
+  <%= image_tag @chef_profile.picture %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @chef_profile.user_id %>
+</p>
+
+<%= link_to 'Edit', edit_chef_profile_path(@chef_profile) %> |
+
+<%= link_to "Create Dish", new_dish_path, class: "nav-link"%>
+

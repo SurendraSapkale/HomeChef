@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @dish.name %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @dish.description %>
+</p>
+
+<p>
+  <strong>Cuisine:</strong>
+  <%= @dish.cuisine %>
+</p>
+
+<p>
+  <strong>Special dietery details:</strong>
+  <%= @dish.special_dietery_details %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @dish.price %>
+</p>
+
+<p>
+  <strong>Preparation time:</strong>
+  <%= @dish.preparation_time %>
+</p>
+
+<p>
+  <strong>Picture:</strong>
+  <%= image_tag @dish.picture %>
+</p>
+
+<p>
+  <strong>Seller:</strong>
+  <%= @dish.seller_id %>
+</p>
+
+<p>
+  <strong>Chef profile:</strong>
+  <%= @dish.chef_profile_id %>
+</p>
+
+<%= link_to 'Edit', edit_dish_path(@dish) %> |
+<%= link_to 'Back', dishes_path %>
