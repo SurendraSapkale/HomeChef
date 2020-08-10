@@ -7,6 +7,7 @@ class ChefProfilesController < ApplicationController
   # GET /chef_profiles.json
   def index
     @chef_profiles = ChefProfile.all
+    
   end
 
   # GET /chef_profiles/1

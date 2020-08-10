@@ -6,6 +6,7 @@
             <div class="card-body">
                 <h5 class="card-title"><%= dish.name %></h5>
                 <p class="card-text"><%= dish.description %></p>
+                <p class="card-text">$<%= dish.price %></p>
                               
                 
                 <%= link_to "Show Dish", "/dishes/#{dish.id}", class: "btn btn-primary" %>
