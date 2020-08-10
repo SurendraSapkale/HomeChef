@@ -1,43 +1,21 @@
 <p id="notice"><%= notice %></p>
-
-<h1>Dishes</h1>
-
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Description</th>
-      <th>Cuisine</th>
-      <th>Special dietery details</th>
-      <th>Price</th>
-      <th>Preparation time</th>
-      <th>Picture</th>
-      <th>Seller</th>
-      <th>Chef profile</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
+<h1>Menu Items</h1>
+<div class="row">
     <% @dishes.each do |dish| %>
-      <tr>
-        <td><%= dish.name %></td>
-        <td><%= dish.description %></td>
-        <td><%= dish.cuisine %></td>
-        <td><%= dish.special_dietery_details %></td>
-        <td><%= dish.price %></td>
-        <td><%= dish.preparation_time %></td>
-        <td><%= image_tag dish.picture %></td>
-        <td><%= dish.seller_id %></td>
-        <td><%= dish.chef_profile_id %></td>
-        <td><%= link_to 'Show', dish %></td>
-        <td><%= link_to 'Edit', edit_dish_path(dish) %></td>
-        <td><%= link_to 'Destroy', dish, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
+        <div class="card" style="width: 18rem;">
+            <%= image_tag dish.picture, class:"card-img-top"%>
+            <div class="card-body">
+                <h5 class="card-title"><%= dish.name %></h5>
+                <p class="card-text"><%= dish.description %></p>
+                           
+                
+                <%= link_to "Show Dish", "/dishes/#{dish.id}", class: "btn btn-primary" %>
+                <%= link_to 'Edit', edit_dish_path(dish) %>
+                <%= link_to 'Destroy', dish, method: :delete, data: { confirm: 'Are you sure?' } %>           
+            </div>
+        </div>
     <% end %>
-  </tbody>
-</table>
+</div>
 
-<br>
 
 <%= link_to 'New Dish', new_dish_path %>

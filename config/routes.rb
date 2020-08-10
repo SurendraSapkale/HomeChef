@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'order/page'
   get 'listing/page'
   resources :dishes
   resources :chef_profiles

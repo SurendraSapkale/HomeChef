@@ -5,7 +5,11 @@ class DishesController < ApplicationController
   # GET /dishes
   # GET /dishes.json
   def index
-    @dishes = Dish.all
+    if params[:chef_profile_id]
+      @dishes = Dish.where(:chef_profile_id => params[:chef_profile_id])
+    else
+      @dishes = Dish.all
+    end
   end
 
   # GET /dishes/1
