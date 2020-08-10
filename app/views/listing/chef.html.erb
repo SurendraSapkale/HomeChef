@@ -1,0 +1,16 @@
+<h1>HomeChefs</h1>
+<div class="row">
+    <% @chef_profile.each do |chef_profile| %>
+        <div class="card" style="width: 18rem;">
+            <%= image_tag chef_profile.picture, class:"card-img-top"%>
+            <div class="card-body">
+                <h5 class="card-title"><%= chef_profile.name %></h5>
+                <p class="card-text"><%= chef_profile.cuisine %></p>
+                              
+                
+                <%= link_to "Show More", "/chef_profiles/#{chef_profile.id}", class: "btn btn-primary" %>
+                            
+            </div>
+        </div>
+    <% end %>
+</div>

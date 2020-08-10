@@ -50,5 +50,8 @@
   <%= @profile.user_id %>
 </p>
 
-<%= link_to 'Edit', edit_profile_path(@profile) %> |
+<%= link_to 'Edit', edit_profile_path(@profile) %> 
+
+<%= link_to "Explore Menu", dishes_path(@dish), class:"nav-link" %> 
+<%= link_to "Explore HomeChefs", chef_profiles_path(@chef_profile), class:"nav-link" %> 
 

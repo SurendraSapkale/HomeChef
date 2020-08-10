@@ -39,7 +39,9 @@
         <td><%= image_tag chef_profile.picture %></td>
         <td><%= chef_profile.user_id %></td>
         <td><%= link_to 'Show', chef_profile %></td>
-        
+        <td><%= link_to 'Edit', edit_chef_profile_path(chef_profile) %></td>
+        <td><%= link_to 'Destroy', chef_profile, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+                        
       </tr>
     <% end %>
   </tbody>
