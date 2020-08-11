@@ -50,31 +50,31 @@ Features:
 
 #### Screenshots
 
-![homepage](/docs/screenshot\homepage.jpg)
+![homepage](/docs/screenshot/homepage.jpg)
 
-![userprofileform](/docs/screenshot\userprofileform.jpg)
-
-
+![userprofileform](/docs/screenshot/userprofileform.jpg)
 
 
 
-![chefprofileform](/docs/screenshot\chefprofileform.jpg)
 
-![chefprofile1](/docs/screenshot\chefprofile1.jpg)
 
-![cheflisting](/docs/screenshot\cheflisting.jpg)
+![chefprofileform](/docs/screenshot/chefprofileform.jpg)
 
-![newdishform](/docs/screenshot\newdishform.jpg)
+![chefprofile1](/docs/screenshot/chefprofile1.jpg)
 
-![dish](/docs/screenshot\dish.jpg)
+![cheflisting](/docs/screenshot/cheflisting.jpg)
 
-![dish1](/docs\screenshot\dish1.jpg)
+![newdishform](/docs/screenshot/newdishform.jpg)
 
-![dishlisting](/docs/screenshot\dishlisting.jpg)
+![dish](/docs/screenshot/dish.jpg)
 
-![dishlisting1](/docs\screenshot\dishlisting1.jpg)
+![dish1](/docs/screenshot/dish1.jpg)
 
-![orderstatus](/docs/screenshot\orderstatus.jpg)
+![dishlisting](/docs/screenshot/dishlisting.jpg)
+
+![dishlisting1](/docs/screenshot/dishlisting1.jpg)
+
+![orderstatus](/docs/screenshot/orderstatus.jpg)
 
 #### Target Audience
 
