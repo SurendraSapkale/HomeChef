@@ -2,17 +2,17 @@
 <h1>HomeChef Profiles</h1>
 <div class="row">
     <% @chef_profiles.each do |chef_profile| %>
-        <div class="card" style="width: 18rem;">
-            <%= image_tag chef_profile.picture, class:"card-img-top"%>
-            <div class="card-body">
-                <h5 class="card-title"><span>Chef<span><%= chef_profile.first_name %></h5>
-                <p class="card-text"><%= chef_profile.cooking_speciality %></p>
-                <p class="card-text"><%= chef_profile.suburb %></p>
-                           
-                
-                <%= link_to "Show More", "/chef_profiles/#{chef_profile.id}", class: "btn btn-primary" %>
-                
-            </div>
+        <div class= "col-md-4">
+                <div class="card" style="width: 18rem;">
+                    <%= image_tag chef_profile.picture, class:"card-img-top"%>
+                    <div class="card-body">
+                        <h5 class="card-title"><span>Chef<span><%= chef_profile.first_name %></h5>
+                        <p class="card-text"><%= chef_profile.cooking_speciality %></p>
+                        <p class="card-text"><%= chef_profile.suburb %></p>
+                                
+                        <%= link_to "Show More", "/chef_profiles/#{chef_profile.id}", class: "btn btn-primary" %>
+                    </div>
+                </div>
         </div>
     <% end %>
 </div>

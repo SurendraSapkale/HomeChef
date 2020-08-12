@@ -2,17 +2,19 @@
 <h1>Menu Items</h1>
 <div class="row">
     <% @dishes.each do |dish| %>
-        <div class="card" style="width: 18rem;">
-            <%= image_tag dish.picture, class:"card-img-top"%>
-            <div class="card-body">
-                <h5 class="card-title"><%= dish.name %></h5>
-                <p class="card-text"><%= dish.description %></p>
-                <p class="card-text">$<%= dish.price %></p>
-                           
-                
-                <%= link_to "Show Dish", "/dishes/#{dish.id}", class: "btn btn-primary" %>
-                           
-            </div>
+        <div class= "col-md-4">
+            <div class="card" style="width: 18rem;">
+                <%= image_tag dish.picture, class:"card-img-top"%>
+                <div class="card-body">
+                    <h5 class="card-title"><%= dish.name %></h5>
+                    <p class="card-text"><%= dish.description %></p>
+                    <p class="card-text">$<%= dish.price %></p>
+                            
+                    
+                    <%= link_to "Show Dish", "/dishes/#{dish.id}", class: "btn btn-primary" %>
+                            
+                </div>
+            </div>        
         </div>
     <% end %>
 </div>
